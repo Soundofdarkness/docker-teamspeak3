@@ -10,9 +10,9 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/* \
     && wget -O /usr/bin/jsawk https://raw.githubusercontent.com/micha/jsawk/master/jsawk \
     && chmod +x /usr/bin/jsawk \
-    && useradd -M -s /bin/false --uid 1000 teamspeak3 \
+    && useradd -M -s /bin/false --uid 1026 Laurel \
     && mkdir /data \
-    && chown teamspeak3:teamspeak3 /data
+    && chown Laurel:Laurel /data
 
 ADD start-teamspeak3.sh /start-teamspeak3
 
